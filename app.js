@@ -1,0 +1,18 @@
+const express = require("express");
+const app = express();
+const userRoutes = require("./routes/userRoutes");
+const tradinPairRoutes = require("./routes/tradingPairRoutes");
+const marketDataRoutes = require("./routes/marketDataRoutes");
+const tradeRoutes = require("./routes/tradeRoutes");
+const orderRoutes = require("./routes/orderRoutes");
+const marketDataRoutes = require("./routes/marketDataRoutes");
+const balanceRoutes = require("./routes/balanceRoutes");
+app.use(express.json());
+app.use("/v1/api/user", userRoutes);
+app.use("/v1/api/trading-pair", tradinPairRoutes);
+app.use("/v1/api/market-data", marketDataRoutes);
+app.use("/v1/api/trades", tradeRoutes);
+app.use("/v1/api/order", orderRoutes);
+app.use("/v1/api/market-data", marketDataRoutes);
+app.use("/v1/api/balance", balanceRoutes);
+module.exports = app;
