@@ -9,7 +9,6 @@ This API provides the functionality to create a cryptocurrency trading platform 
 - Market Data: Access real-time market data for trading pairs.
 - Orders: Place, retrieve, update, and cancel orders.
 - Balances: Manage user balances for different currencies.
-- Conversion Rates: Store and retrieve conversion rates between currencies.
 
 ## Technologies Used
 
